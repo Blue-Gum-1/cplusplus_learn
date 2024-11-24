@@ -48,6 +48,7 @@ int main004()
 
     int a = 10;
     void* p = &a;
+    printf("sizeof void* p = %d\n", sizeof(p));
     printf("%d\n", *(int*)p);
 
     int b = 20;
@@ -73,6 +74,14 @@ int main004()
         int c[] = { 9, 10, 11, 12 };
         int* p[] = { a, b, c };
         cout << p[1][1] << "  " << *(*(p + 1) + 1) << endl;
+    }
+
+    {
+        cout << "指针数组与数组指针" << endl;
+        // 数组指针
+        int c[3][4] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+        int(*s2)[4] = c;
+        rep(i, 0, 2) rep(j, 0, 3) cout << (*(*(s2 + i) + j)) << endl;
     }
 
     system("pause");

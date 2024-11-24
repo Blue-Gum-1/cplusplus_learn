@@ -48,7 +48,7 @@ typedef long long ll;
 
 int main006(int argc, char* argv[])
 {
-    int* p = (int*)malloc(sizeof(int) * 1000000); // 申请10个int大小的空间
+    int* p = (int*)malloc(sizeof(int) * 10); // 申请10个int大小的空间
 
     if (p == null) {
         cout("malloc error");
@@ -66,7 +66,10 @@ int main006(int argc, char* argv[])
         rep(j, 0, 4) s[i][j] = i * 5 + j;
     }
 
-    rep(i, 0, 2) rep(j, 0, 4) cout(*(*(s + i) + j));
+    rep(i, 0, 2) rep(j, 0, 4) {
+        cout << (*(*(s + i) + j)) << "\t";
+        if (j == 4) cout << endl;
+    }
 
     rep(i, 0, 2) free(s[i]), s[i] = null;
     free(s), s = null;

@@ -57,6 +57,9 @@
     <ClCompile Include="random-bitset.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="009-结构体-联合体-共用体.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test.h">
