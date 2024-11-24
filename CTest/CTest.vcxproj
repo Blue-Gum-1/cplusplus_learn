@@ -148,7 +148,7 @@
     <ClCompile Include="006-内存空间-栈与堆.cpp" />
     <ClCompile Include="007-带参的main函数.cpp" />
     <ClCompile Include="008-命名冲突.cpp" />
-    <ClCompile Include="009-结构体-联合体-共用体.cpp" />
+    <ClCompile Include="009-结构体-联合体-枚举.cpp" />
     <ClCompile Include="add.cpp" />
     <ClCompile Include="bfstest.cpp" />
     <ClCompile Include="link.cpp" />
