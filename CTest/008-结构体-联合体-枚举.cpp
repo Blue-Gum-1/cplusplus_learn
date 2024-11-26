@@ -21,14 +21,38 @@ typedef long long ll;
         3. 修改其中任意一个成员变量的值, 其他成员变量也会随之修改
 */
 
+struct Person {
+    string name;
+    int age;
+};
+
 union test_union {
     char ch;
     short sh;
     int var = 0;
 };
 
-int main(int argc, char* argv[])
+enum color { red, green, blue, black = 10, pink, yellow };
+
+void printPerson(const Person* const p) {
+    cout << "person.name = " << p->name << ", person.age = " << p->age << endl;
+}
+
+int main008(int argc, char* argv[])
 {
+    // 结构体
+    Person p = { "tom", 20 };
+    printf("sizeof(Person) = %d\n", sizeof(Person)); // 32
+    cout << "person.name = " << p.name << ", person.age = " << p.age << endl;
+
+    // 结构体指针
+    Person* s = &p;
+    s->name = "jerry", s->age = 30;
+    cout << "person.name = " << p.name << ", person.age = " << p.age << endl;
+
+    printPerson(s);
+
+    // 联合体-共用体
     test_union obj;
     printf("obj.ch = %p, obj.sh = %p. obj.var = %p\n", &obj.ch, &obj.sh, &obj.var);
     printf("sizeof(test_union) = %d\n", sizeof(test_union));
@@ -39,6 +63,11 @@ int main(int argc, char* argv[])
     obj.var = 0x7654321;
     printf("obj.ch = %c, obj.sh = %hd. obj.var = %d\n", obj.ch, obj.sh, obj.var);
 
+
+    // 枚举
+    int flag = 12;
+    if (flag == yellow) cout("yellow is 12");
+    else cout("yellow is not 12");
     system("pause");
     return EXIT_SUCCESS;
 }

@@ -37,7 +37,7 @@ typedef long long ll;
         - static 全局函数: 程序启动开始(早于main函数), 到程序终止结束 --- 程序执行期间
 */
 
-int main005()
+int main006()
 {
 
     vector<int> v;

@@ -21,7 +21,7 @@ int add_num(int a, int b); // 函数定义在 'add.cpp' 文件中
         (2) 头文件内容: 1) include头文件; 2) 函数声明; 3) 类型定义; 4) 宏定义;
 
 */
-int main003()
+int main005()
 {
     int a = 1, b = 2;
     printf("a = %d, b = %d\n", a, b);

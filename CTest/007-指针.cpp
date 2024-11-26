@@ -38,7 +38,7 @@ typedef long long ll;
         访问方式相当于二维数组: p[1][2] <==> *(*(p + 1) + 2)
 */
 
-int main004()
+int main007()
 {
     {
         int a = 10;

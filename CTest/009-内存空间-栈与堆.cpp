@@ -46,7 +46,7 @@ typedef long long ll;
         3) 注意: 申请空间时, 先申请外层空间, 在申请内层空间; 释放空间时, 需要先释放内层的空间, 再释放外层的空间.
 */
 
-int main006(int argc, char* argv[])
+int main009(int argc, char* argv[])
 {
     int* p = (int*)malloc(sizeof(int) * 10); // 申请10个int大小的空间
 

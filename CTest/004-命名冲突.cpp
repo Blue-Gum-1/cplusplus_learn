@@ -16,7 +16,7 @@ typedef long long ll;
     1.
 */
 
-int main008(int argc, char* argv[])
+int main004(int argc, char* argv[])
 {
     int m = 20;
     {

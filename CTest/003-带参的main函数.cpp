@@ -24,7 +24,7 @@ typedef long long ll;
             - 右键项目 -> 属性 -> 调试 -> 命令参数 -> 输入 word1 "hello world" -> 确定
 */
 
-int main007(int argc, char* argv[])
+int main003(int argc, char* argv[])
 {
     for (size_t i = 0; i < argc; i++)
     {
