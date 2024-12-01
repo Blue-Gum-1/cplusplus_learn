@@ -17,30 +17,22 @@ typedef long long ll;
 
 */
 
-class Person1 {
-    string name;
-    int age;
+class Person {
 public:
-    void showPerson() { cout << "name = " << this->name << ", age = " << this->age << endl; }
-    Person1(int age) {
-        cout("调用Person对象的带参构造函数");
-        this->name = "tom";
-        this->age = age;
+    static int m_A;
+    int age = 10;
+    static void func() {
+        cout("调用static void func()");
+        debug(m_A, m_A);
+        // debug(age, age); // 编译器直接报错
     }
-    Person1(const Person1& p) {
-        cout("调用Person对象的拷贝构造函数");
-        this->age = p.age;
-    }
-    ~Person1() { cout("调用Person对象的析构函数"); }
 };
-
-void test00001(Person1 p) {
-    p.showPerson();
-}
+int Person::m_A = 200;
 
 void test_person_012_02() {
-    Person1 p1(20); // , p2(p1); p1.showPerson();
-    test00001(p1);
+    Person p;
+    p.func();
+    Person::func();
 }
 
 int main(int argc, char* argv[])

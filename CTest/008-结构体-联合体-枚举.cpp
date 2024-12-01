@@ -21,7 +21,7 @@ typedef long long ll;
         3. 修改其中任意一个成员变量的值, 其他成员变量也会随之修改
 */
 
-struct Person {
+struct s_Person {
     string name;
     int age;
 };
@@ -34,19 +34,19 @@ union test_union {
 
 enum color { red, green, blue, black = 10, pink, yellow };
 
-void printPerson(const Person* const p) {
+void printPerson(const s_Person* const p) {
     cout << "person.name = " << p->name << ", person.age = " << p->age << endl;
 }
 
 int main008(int argc, char* argv[])
 {
     // 结构体
-    Person p = { "tom", 20 };
-    printf("sizeof(Person) = %d\n", sizeof(Person)); // 32
+    s_Person p = { "tom", 20 };
+    printf("sizeof(Person) = %d\n", sizeof(s_Person)); // 32
     cout << "person.name = " << p.name << ", person.age = " << p.age << endl;
 
     // 结构体指针
-    Person* s = &p;
+    s_Person* s = &p;
     s->name = "jerry", s->age = 30;
     cout << "person.name = " << p.name << ", person.age = " << p.age << endl;
 
