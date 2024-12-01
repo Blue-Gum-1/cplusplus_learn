@@ -60,6 +60,18 @@
     <ClCompile Include="008-结构体-联合体-枚举.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="010-引用.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="011-函数默认参数-占位参数-重载.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="012-01-封装.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="012-02-对象的初始化和清理.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test.h">
