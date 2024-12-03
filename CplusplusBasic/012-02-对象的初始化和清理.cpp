@@ -17,7 +17,7 @@ typedef long long ll;
 
 */
 
-class Person {
+class Person_02 {
 public:
     static int m_A;
     int age = 10;
@@ -27,15 +27,15 @@ public:
         // debug(age, age); // ±‡“Î∆˜÷±Ω”±®¥Ì
     }
 };
-int Person::m_A = 200;
+int Person_02::m_A = 200;
 
 void test_person_012_02() {
-    Person p;
+    Person_02 p;
     p.func();
-    Person::func();
+    Person_02::func();
 }
 
-int main(int argc, char* argv[])
+int main012_02(int argc, char* argv[])
 {
     test_person_012_02();
 

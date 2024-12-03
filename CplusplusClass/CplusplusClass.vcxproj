@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{264ae57c-8c47-4a60-a48c-db6b70ded509}</ProjectGuid>
-    <RootNamespace>CTest</RootNamespace>
+    <ProjectGuid>{bd7a44e8-e902-4f1f-81ed-a7e070ab0368}</ProjectGuid>
+    <RootNamespace>CplusplusClass</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>CplusplusBasic</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,26 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="000-printf格式化输出.cpp" />
-    <ClCompile Include="001-字符串.cpp" />
-    <ClCompile Include="002-return与exit.cpp" />
-    <ClCompile Include="005-多文件编程.cpp" />
-    <ClCompile Include="007-指针.cpp" />
-    <ClCompile Include="006-全局与局部变量-作用域-生命周期.cpp" />
-    <ClCompile Include="009-内存空间-栈与堆.cpp" />
-    <ClCompile Include="003-带参的main函数.cpp" />
-    <ClCompile Include="004-命名冲突.cpp" />
-    <ClCompile Include="008-结构体-联合体-枚举.cpp" />
-    <ClCompile Include="010-引用.cpp" />
-    <ClCompile Include="011-函数默认参数-占位参数-重载.cpp" />
-    <ClCompile Include="add.cpp" />
-    <ClCompile Include="bfstest.cpp" />
-    <ClCompile Include="link.cpp" />
-    <ClCompile Include="qpow.cpp" />
-    <ClCompile Include="random-bitset.cpp" />
+    <ClCompile Include="..\CTest\012-01-封装.cpp" />
+    <ClCompile Include="..\CTest\012-02-对象的初始化和清理.cpp" />
+    <ClCompile Include="..\CTest\012-03-成员变量与成员函数分开存储.cpp" />
+    <ClCompile Include="012-04-常函数与常对象-mutable-const.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="test.h" />
+    <Text Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
