@@ -17,7 +17,7 @@ typedef long long ll;
 
 */
 
-class Person_ {
+class Person_04 {
 public:
     int m_A;
     mutable int m_B;
@@ -29,13 +29,13 @@ public:
 };
 
 void test_012_04_01() {
-    const Person p;
+    const Person_04 p;
     p.showPerson();
     // p.m_A = 20; // ±¨´í
     p.m_B = 50;
 }
 
-int main(int argc, char* argv[])
+int main12_04(int argc, char* argv[])
 {
 
     system("pause");

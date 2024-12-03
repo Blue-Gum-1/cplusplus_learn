@@ -42,7 +42,7 @@ void test_012_03_02() {
     debug(sizeof Person, sizeof(Person_03));
 }
 
-int main(int argc, char* argv[])
+int main012_03(int argc, char* argv[])
 {
     // test_012_03_01();
 
