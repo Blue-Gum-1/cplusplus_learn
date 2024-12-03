@@ -8,6 +8,7 @@
 #define rrep(i, m, n) for (int i = (m); i >= (n); --i)
 #define debug(n, m) cout << #n << " = " << (m) << endl
 #define cout(n) cout << n << endl
+#define PI 3.14
 using namespace std;
 
 typedef pair<int, int> PII;
@@ -17,26 +18,19 @@ typedef long long ll;
 
 */
 
-class Person_ {
+class Circle {
 public:
-    int m_A;
-    mutable int m_B;
-    // this指针: 本质是一个常量指针, 指针的指向是不可以修改的
-    void showPerson() const {
-        // this->m_A = 100; // 报错
-        this->m_B = 200;
+    int m_r;
+    double calculateZC() {
+        return 2 * PI * m_r;
     }
 };
 
-void test_012_04_01() {
-    const Person p;
-    p.showPerson();
-    // p.m_A = 20; // 报错
-    p.m_B = 50;
-}
-
-int main(int argc, char* argv[])
+int main012_01(int argc, char* argv[])
 {
+    Circle c;
+    c.m_r = 10;
+    debug(圆的周长, c.calculateZC());
 
     system("pause");
     return EXIT_SUCCESS;

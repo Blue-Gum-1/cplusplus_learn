@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\CTest\012-01-封装.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\CTest\012-02-对象的初始化和清理.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\CTest\012-03-成员变量与成员函数分开存储.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="012-04-常函数与常对象-mutable-const.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="012-02-对象的初始化和清理.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="012-03-成员变量与成员函数分开存储.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="012-01-封装.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

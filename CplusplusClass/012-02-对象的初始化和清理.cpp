@@ -17,26 +17,27 @@ typedef long long ll;
 
 */
 
-class Person_ {
+class Person_02 {
 public:
-    int m_A;
-    mutable int m_B;
-    // this指针: 本质是一个常量指针, 指针的指向是不可以修改的
-    void showPerson() const {
-        // this->m_A = 100; // 报错
-        this->m_B = 200;
+    static int m_A;
+    int age = 10;
+    static void func() {
+        cout("调用static void func()");
+        debug(m_A, m_A);
+        // debug(age, age); // 编译器直接报错
     }
 };
+int Person_02::m_A = 200;
 
-void test_012_04_01() {
-    const Person p;
-    p.showPerson();
-    // p.m_A = 20; // 报错
-    p.m_B = 50;
+void test_person_012_02() {
+    Person_02 p;
+    p.func();
+    Person_02::func();
 }
 
-int main(int argc, char* argv[])
+int main012_02(int argc, char* argv[])
 {
+    test_person_012_02();
 
     system("pause");
     return EXIT_SUCCESS;
