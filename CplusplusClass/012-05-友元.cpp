@@ -21,12 +21,8 @@ class Building;
 class GoodGay {
     Building* building;
 public:
-    
-    GoodGay() { building = new Building; }
-    void visit() { // 访问Building中的属性
-        debug(好基友类 正在访问, building->m_SittingRoom);
-        // debug(好基友类 正在访问, building->m_BedRoom);
-    }
+    GoodGay();
+    void visit();
     void showBuild();
 };
 
@@ -46,6 +42,11 @@ void goodGay(Building* building) {
     debug(好基友全局函数 正在访问, building->m_BedRoom);
 }
 
+GoodGay::GoodGay() { building = new Building; }
+void GoodGay::visit() { // 访问Building中的属性
+    debug(好基友类 正在访问, building->m_SittingRoom);
+    // debug(好基友类 正在访问, building->m_BedRoom);
+}
 void GoodGay::showBuild() {
     debug(好基友类中的成员函数 正在访问, building->m_SittingRoom);
     debug(好基友类中的成员函数 正在访问, building->m_BedRoom);
@@ -58,7 +59,7 @@ void test_012_05_01() {
     goodGay.visit();
 }
 
-int main(int argc, char* argv[])
+int main012_05(int argc, char* argv[])
 {
     test_012_05_01();
 

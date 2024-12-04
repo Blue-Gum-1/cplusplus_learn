@@ -144,6 +144,7 @@
     <ClCompile Include="012-03-成员变量与成员函数分开存储.cpp" />
     <ClCompile Include="012-04-常函数与常对象-mutable-const.cpp" />
     <ClCompile Include="012-05-友元.cpp" />
+    <ClCompile Include="012-06-运算符重载.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.md" />

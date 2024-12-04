@@ -30,6 +30,9 @@
     <ClCompile Include="012-05-友元.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="012-06-运算符重载.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.md" />
