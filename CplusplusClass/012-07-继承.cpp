@@ -32,6 +32,9 @@ public:
 
 class BaseClass {
 public:
+    BaseClass() { m_A = 100; }
+    void func() { cout("调用BaseClass - func()"); }
+    void func(int a) { cout("调用BaseClass - func(int a)"); }
     int m_A;
 protected:
     int m_B;
@@ -41,16 +44,31 @@ private:
 
 class SonClass : public BaseClass {
 public:
-    int m_D;
+    SonClass() { m_A = 200; }
+    void func() { cout("调用SonClass - func()"); }
+    int m_A;
 };
 
 void test_012_07_01() {
     debug(sizeof(SonClass), sizeof(SonClass));
 }
 
-int main(int argc, char* argv[])
+void test_012_07_02() {
+    SonClass s;
+    debug("SonClass下的m_A", s.m_A);
+    debug("BaseClass下的m_A", s.BaseClass::m_A);
+}
+
+void test_012_07_03() {
+    SonClass s;
+    s.func(); s.BaseClass::func();
+    // s.func(1); // 报错: 当子类与父类拥有同名的成员函数, 子类会隐藏父类中所有版本的同名成员函数
+    s.BaseClass::func(1);
+}
+
+int main012_07(int argc, char* argv[])
 {
-    test_012_07_01();
+    test_012_07_03();
 
     system("pause");
     return EXIT_SUCCESS;

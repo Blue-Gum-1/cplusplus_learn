@@ -36,6 +36,9 @@
     <ClCompile Include="012-07-继承.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="012-08-菱形继承-虚继承.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.md" />
