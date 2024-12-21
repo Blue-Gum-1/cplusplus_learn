@@ -17,12 +17,12 @@ typedef long long ll;
 
 */
 
-class Animal { public: int m_Age; };
-class Sheep: virtual public Animal { }; // —Ú
-class Tuo : virtual public Animal { }; // Õ’
+class Animal013 { public: int m_Age; };
+class Sheep: virtual public Animal013 { }; // —Ú
+class Tuo : virtual public Animal013 { }; // Õ’
 class SheepTuo : public Sheep, public Tuo { }; // —ÚÕ’
 
-void test_012_08_01() {
+void test_013_02_01() {
     SheepTuo st;
     debug(sizeof(SheepTuo), sizeof(SheepTuo)); // 8
     st.Sheep::m_Age = 18;
@@ -33,9 +33,9 @@ void test_012_08_01() {
     debug(st.m_Age, st.m_Age);
 }
 
-int main(int argc, char* argv[])
+int main013_02(int argc, char* argv[])
 {
-    test_012_08_01();
+    test_013_02_01();
 
     system("pause");
     return EXIT_SUCCESS;

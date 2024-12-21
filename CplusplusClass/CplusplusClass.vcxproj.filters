@@ -33,10 +33,28 @@
     <ClCompile Include="012-06-运算符重载.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="012-07-继承.cpp">
+    <ClCompile Include="013-01-继承.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="012-08-菱形继承-虚继承.cpp">
+    <ClCompile Include="013-02-菱形继承-虚继承.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="014-01-多态.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="014-02-多态案例1-计算器类.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="014-03-纯虚函数与抽象类.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="014-04-多态案例2-制作饮品.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="014-05-虚析构与纯虚析构.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="014-06-多态案例3-电脑组装.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

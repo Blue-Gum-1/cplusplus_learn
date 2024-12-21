@@ -49,26 +49,26 @@ public:
     int m_A;
 };
 
-void test_012_07_01() {
+void test_013_01_01() {
     debug(sizeof(SonClass), sizeof(SonClass));
 }
 
-void test_012_07_02() {
+void test_013_01_02() {
     SonClass s;
     debug("SonClass下的m_A", s.m_A);
     debug("BaseClass下的m_A", s.BaseClass::m_A);
 }
 
-void test_012_07_03() {
+void test_013_01_03() {
     SonClass s;
     s.func(); s.BaseClass::func();
     // s.func(1); // 报错: 当子类与父类拥有同名的成员函数, 子类会隐藏父类中所有版本的同名成员函数
     s.BaseClass::func(1);
 }
 
-int main012_07(int argc, char* argv[])
+int main013_01(int argc, char* argv[])
 {
-    test_012_07_03();
+    test_013_01_03();
 
     system("pause");
     return EXIT_SUCCESS;
