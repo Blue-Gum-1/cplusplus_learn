@@ -57,6 +57,9 @@
     <ClCompile Include="014-06-多态案例3-电脑组装.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.md" />

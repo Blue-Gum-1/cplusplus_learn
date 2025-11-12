@@ -53,6 +53,15 @@ int main000()
     int maxInt = INT_MAX;
     printf("%x\n", maxInt);
 
+    {
+        int a, b, c;
+        sscanf("10+20=30", "%d+%d=%d", &a, &b, &c);
+        printf("%d, %d, %d\n", a, b, c);
+    }
+
+    char str[] = "abc";
+    printf("%05s\n", str);
+
     system("pause");
     return EXIT_SUCCESS;
 }

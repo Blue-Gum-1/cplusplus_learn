@@ -97,6 +97,12 @@ int main001() {
 		printf("i = %d, f = %.2lf, l = %ld\n", i, f, l);
 	}
 
+	{
+		const char* c = "hello";
+		//c[2] = 'd'; // ±¨´í
+		c = "world";
+	}
+
 	system("pause");
 	return EXIT_SUCCESS;
 }
