@@ -30,5 +30,17 @@
     <ClCompile Include="006-模板的局限性.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="007-类模板语法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="008-类模板与函数模板的区别.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="009-类模板中成员函数的创建时机.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="010-类模板对象做函数参数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

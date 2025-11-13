@@ -38,7 +38,7 @@ template<> bool myCompare(Person& p1, Person& p2) {
     return p1.m_Name == p2.m_Name && p1.m_Age == p2.m_Age;
 }
 
-int main(int argc, char* argv[]) {
+int main006(int argc, char* argv[]) {
     int a = 10, b = 20;
     cout << myCompare(a, b) << endl;
     
