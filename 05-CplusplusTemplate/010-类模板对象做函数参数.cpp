@@ -53,7 +53,7 @@ void printPerson3(T& p) {
     p.showPerson();
 }
 
-int main(int argc, char* argv[]) {
+int main010(int argc, char* argv[]) {
     Person<string, int> p("ËïÎò¿Õ", 2000);
     printPerson1(p);
     printPerson2(p);
