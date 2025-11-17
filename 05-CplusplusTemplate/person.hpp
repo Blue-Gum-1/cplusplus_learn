@@ -6,8 +6,19 @@
 using namespace std;
 
 template<class T1, class T2>
+class Person;
+
+template<class T1, class T2>
+ostream& operator<<(ostream& out, const Person<T1, T2>& p) {
+    out << "name = " << p.m_Name << ", age = " << p.m_Age;
+    return out;
+}
+
+template<class T1, class T2>
 class Person {
+    friend ostream& operator<< <>(ostream& out, const Person<T1, T2>& p);
 public:
+    Person() { }
     Person(T1, T2);
     void showPerson3();
 
