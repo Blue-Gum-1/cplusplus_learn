@@ -46,6 +46,19 @@ typedef long long ll;
 		- int rfind(const char c, int pos = 0) const;  //查找字符c最后一次出现位置
 		- string& replace(int pos, int n, const string& str);  //替换从pos开始n个字符为字符串str
 		- string& replace(int pos, int n,const char* s); //替换从pos开始的n个字符为字符串s
+	5. 字符串比较
+		- int compare(const string &s) const; //与字符串s比较
+		- int compare(const char *s) const; //与字符串s比较
+	6. 字符串存取
+		- char& operator[](int n);  //通过[]方式取字符
+		- char& at(int n);   //通过at方法获取字符
+	7. 插入和删除
+		- string& insert(int pos, const char* s); //插入字符串
+		- string& insert(int pos, const string& str);  //插入字符串
+		- string& insert(int pos, int n, char c);   //在指定位置插入n个字符c
+		- string& erase(int pos, int n = npos);  //删除从Pos开始的n个字符 
+	8. 截取子串
+		- string substr(int pos = 0, int n = npos) const;   //返回由pos开始的n个字符组成的字符串
 */
 
 // 构造函数
@@ -109,17 +122,58 @@ void test02_05() {
 	cout << str1 << endl; // aa1111efg1efg
 }
 
+// 比较
 void test02_06() {
-
+	string str1 = "hello", str2 = "hexxo";
+	cout << (str1 > str2) << endl; // 0 -> 相当于false
+	cout << str1.compare(str2) << endl; // -1, 小于
+	cout << str1.compare(str1) << endl; // 0, 相等
+	cout << str2.compare(str1) << endl; // 1, 大于
 }
 
+// 存取
+void test02_07() {
+	string str = "hello";
+	cout << str << endl; // hello
+	cout << str[2] << endl; // l
+	cout << str.at(2) << endl; // l
+	str[2] = 'a';
+	str.at(1) = 'x';
+	cout << str << endl; // hxalo
+}
+
+// 插入和删除
+void test02_08() {
+	string str = "hello";
+	str.insert(1, "2222");
+	cout << str << endl;
+
+	str.erase(1, 3);  //从1号位置开始3个字符
+	cout << str << endl; // he
+}
+
+// 截取子串
+void test02_09() {
+	string str = "abcdefg";
+	string subStr = str.substr(1, 3);
+	cout << "subStr = " << subStr << endl; // bcd
+
+	string email = "hello@sina.com";
+	int pos = email.find("@");
+	string username = email.substr(0, pos);
+	cout << "username: " << username << endl; // hello
+}
 
 int main(int argc, char* argv[]) {
 	//test02_01();
 	//test02_02();
 	//test02_03();
-	test02_04();
-	test02_05();
+	//test02_04();
+	//test02_05();
+	//test02_06();
+	//test02_07();
+	//test02_08();
+	test02_09();
 	// system("pause");
 	return EXIT_SUCCESS;
 }
