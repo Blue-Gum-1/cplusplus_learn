@@ -141,8 +141,11 @@
   <ItemGroup>
     <ClCompile Include="001-STL初识-vector.cpp" />
     <ClCompile Include="002-string容器.cpp" />
+    <ClCompile Include="003-vector容器.cpp" />
+    <ClCompile Include="004-deque容器.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="mydata.hpp" />
     <ClInclude Include="person.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -164,7 +164,7 @@ void test02_09() {
 	cout << "username: " << username << endl; // hello
 }
 
-int main(int argc, char* argv[]) {
+int main002(int argc, char* argv[]) {
 	//test02_01();
 	//test02_02();
 	//test02_03();
