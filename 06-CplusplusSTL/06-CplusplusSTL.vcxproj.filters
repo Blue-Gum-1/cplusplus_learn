@@ -27,12 +27,21 @@
     <ClCompile Include="004-deque容器.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="005-案例-评委打分.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="student.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="person.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="mydata.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="student.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

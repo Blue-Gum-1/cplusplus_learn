@@ -143,10 +143,13 @@
     <ClCompile Include="002-string容器.cpp" />
     <ClCompile Include="003-vector容器.cpp" />
     <ClCompile Include="004-deque容器.cpp" />
+    <ClCompile Include="005-案例-评委打分.cpp" />
+    <ClCompile Include="student.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mydata.hpp" />
     <ClInclude Include="person.hpp" />
+    <ClInclude Include="student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
