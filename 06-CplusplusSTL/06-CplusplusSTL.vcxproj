@@ -144,6 +144,9 @@
     <ClCompile Include="003-vector容器.cpp" />
     <ClCompile Include="004-deque容器.cpp" />
     <ClCompile Include="005-案例-评委打分.cpp" />
+    <ClCompile Include="006-stack容器.cpp" />
+    <ClCompile Include="007-queue容器.cpp" />
+    <ClCompile Include="008-list容器.cpp" />
     <ClCompile Include="student.cpp" />
   </ItemGroup>
   <ItemGroup>

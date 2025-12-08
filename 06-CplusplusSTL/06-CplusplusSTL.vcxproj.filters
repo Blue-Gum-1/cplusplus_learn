@@ -33,6 +33,15 @@
     <ClCompile Include="student.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="006-stack容器.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="007-queue容器.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="008-list容器.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="person.hpp">

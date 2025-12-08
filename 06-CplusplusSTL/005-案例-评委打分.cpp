@@ -50,7 +50,7 @@ void showScore(vector<Student>& v) {
 	rep(i, 0, v.size() - 1) v[i].showStudent();
 }
 
-int main(int argc, char* argv[]) {
+int main005(int argc, char* argv[]) {
 	// 随机数种子
 	srand((unsigned int) time(null));
 
