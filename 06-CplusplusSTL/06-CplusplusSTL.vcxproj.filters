@@ -42,6 +42,9 @@
     <ClCompile Include="008-list容器.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="009-set容器.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="person.hpp">

@@ -161,7 +161,7 @@ void test08_07() {
 	}
 }
 
-int main(int argc, char* argv[]) {
+int main008(int argc, char* argv[]) {
 	//test08_01();
 	//test08_02();
 	//test08_02_02();

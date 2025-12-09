@@ -147,6 +147,7 @@
     <ClCompile Include="006-stack容器.cpp" />
     <ClCompile Include="007-queue容器.cpp" />
     <ClCompile Include="008-list容器.cpp" />
+    <ClCompile Include="009-set容器.cpp" />
     <ClCompile Include="student.cpp" />
   </ItemGroup>
   <ItemGroup>
