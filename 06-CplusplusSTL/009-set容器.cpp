@@ -10,6 +10,8 @@
 #define cout(n) cout << n << endl
 using namespace std;
 
+#include "person.hpp"
+
 typedef pair<int, int> PII;
 typedef long long ll;
 
@@ -95,7 +97,7 @@ void test09_06() {
 }
 
 // setÈİÆ÷ÅÅĞò - ·Âº¯Êı
-class MyCompare {
+class CompareSet {
 public:
 	bool operator()(int a, int b) const {
 		return a > b;
@@ -104,20 +106,36 @@ public:
 void test09_07() {
 	set<int> s1{ 10, 30, 60, 20, 50, 40 }; printSet(s1);
 
-	set<int, MyCompare> s2;
+	set<int, CompareSet> s2;
 	for (auto it = s1.begin(); it != s1.end(); ++it) s2.insert(*it);
 	for (auto it = s2.begin(); it != s2.end(); ++it) cout << *it << " ";
 	cout << endl;
 }
 
-int main(int argc, char* argv[]) {
+class ComparePerson {
+public:
+	bool operator()(const Person& p1, const Person& p2) const {
+		return p1.m_Age > p2.m_Age;
+	}
+};
+void test09_07_02() {
+	set<Person, ComparePerson> s1;
+	s1.insert(Person("tom", 18));
+	s1.insert(Person("jerry", 20));
+	s1.insert(Person("cat", 19));
+	s1.insert(Person("bob", 23));
+	for (auto it = s1.begin(); it != s1.end(); ++it) cout << *it << endl;
+}
+
+int main009(int argc, char* argv[]) {
 	//test09_01();
 	//test09_02();
 	//test09_03();
 	//test09_04();
 	//test09_05();
 	//test09_06();
-	test09_07();
+	//test09_07();
+	test09_07_02();
 	// system("pause");
 	return EXIT_SUCCESS;
 }
