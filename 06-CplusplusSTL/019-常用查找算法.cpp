@@ -35,8 +35,56 @@ void test19_01() {
 	else cout << "找到了! name = " << pos->m_Name << ", age = " << pos->m_Age << endl;
 }
 
-int main(int argc, char* argv[]) {
-	test19_01();
+// find_if
+struct GreaterFive {
+	bool operator()(int val) const {
+		return val > 5;
+	}
+};
+void test19_02() {
+	vector<int> v{ 1, 4, 7, 9, 5, 3 };
+	auto pos = find_if(v.begin(), v.end(), GreaterFive());
+	if (pos == v.end()) cout << "未找到! ! !" << endl;
+	else cout << "找到了! 值为 " << *pos << endl; // 7
+}
+
+// adjacent_find
+void test19_03() {
+	vector<int> v{ 1, 2, 3, 4, 4, 2, 5, 2 };
+	auto pos = adjacent_find(v.begin(), v.end());
+	if (pos == v.end()) cout << "未找到! ! !" << endl;
+	else cout << "找到了! 值为 " << *pos << endl; // 4
+}
+
+// binary_search
+void test19_04() {
+	vector<int> v{ 1, 2, 2, 3, 4, 6 };
+	auto pos = binary_search(v.begin(), v.end(), 4);
+	if (!pos) cout << "未找到! ! !" << endl;
+	else cout << "找到了!" << endl;
+}
+
+// count
+void test19_05() {
+	vector<int> v{ 1, 1, 2, 3, 1, 4, 1, 5 };
+	auto num = count(v.begin(), v.end(), 1);
+	cout << "1 在容器中的数量为 " << num << endl; // 4
+}
+
+// count_if
+void test19_06() {
+	vector<int> v{ 1, 2, 6, 8, 9, 2, 3 };
+	auto num = count_if(v.begin(), v.end(), GreaterFive());
+	cout << "大于 5 的内容数量为 " << num << endl; // 3
+}
+
+int main019(int argc, char* argv[]) {
+	//test19_01();
+	//test19_02();
+	//test19_03();
+	//test19_04();
+	//test19_05();
+	test19_06();
 	// system("pause");
 	return EXIT_SUCCESS;
 }

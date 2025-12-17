@@ -17,7 +17,7 @@ typedef long long ll;
 
 */
 
-class MyCmpare {
+class MyCompare {
 public:
 	bool operator()(int num1, int num2) const {
 		return num1 > num2;
@@ -29,7 +29,7 @@ void test14_01() {
 	rep(i, 0, v.size() - 1) cout << v[i] << " ";
 	cout << endl;
 
-	sort(v.begin(), v.end(), MyCmpare()); // 使用函数对象改变算法策略, 排序从大到小
+	sort(v.begin(), v.end(), MyCompare()); // 使用函数对象改变算法策略, 排序从大到小
 	rep(i, 0, v.size() - 1) cout << v[i] << " ";
 	cout << endl;
 }

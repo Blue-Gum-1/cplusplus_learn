@@ -158,6 +158,7 @@
     <ClCompile Include="017-内建函数对象-逻辑仿函数.cpp" />
     <ClCompile Include="018-常用遍历算法.cpp" />
     <ClCompile Include="019-常用查找算法.cpp" />
+    <ClCompile Include="020-常用排序算法.cpp" />
     <ClCompile Include="student.cpp" />
   </ItemGroup>
   <ItemGroup>

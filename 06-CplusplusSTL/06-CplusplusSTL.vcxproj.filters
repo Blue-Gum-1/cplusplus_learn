@@ -75,6 +75,9 @@
     <ClCompile Include="019-常用查找算法.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="020-常用排序算法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="person.hpp">
