@@ -56,7 +56,7 @@ void test20_04() {
 	repit(it, v) cout << *it << " "; cout << endl; // 4 5 3 2 1
 }
 
-int main(int argc, char* argv[]) {
+int main020(int argc, char* argv[]) {
 	//test20_01();
 	//test20_02();
 	//test20_03();
