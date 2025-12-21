@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05-CplusplusTemplate", "05-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06-CplusplusSTL", "06-CplusplusSTL\06-CplusplusSTL.vcxproj", "{C4CBCA4A-57D6-4751-B7C7-E10CF8971C0D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07-机房预约系统", "07-机房预约系统\07-机房预约系统.vcxproj", "{19CBFD39-E005-4271-8216-C9CDF9179773}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{C4CBCA4A-57D6-4751-B7C7-E10CF8971C0D}.Release|x64.Build.0 = Release|x64
 		{C4CBCA4A-57D6-4751-B7C7-E10CF8971C0D}.Release|x86.ActiveCfg = Release|Win32
 		{C4CBCA4A-57D6-4751-B7C7-E10CF8971C0D}.Release|x86.Build.0 = Release|Win32
+		{19CBFD39-E005-4271-8216-C9CDF9179773}.Debug|x64.ActiveCfg = Debug|x64
+		{19CBFD39-E005-4271-8216-C9CDF9179773}.Debug|x64.Build.0 = Debug|x64
+		{19CBFD39-E005-4271-8216-C9CDF9179773}.Debug|x86.ActiveCfg = Debug|Win32
+		{19CBFD39-E005-4271-8216-C9CDF9179773}.Debug|x86.Build.0 = Debug|Win32
+		{19CBFD39-E005-4271-8216-C9CDF9179773}.Release|x64.ActiveCfg = Release|x64
+		{19CBFD39-E005-4271-8216-C9CDF9179773}.Release|x64.Build.0 = Release|x64
+		{19CBFD39-E005-4271-8216-C9CDF9179773}.Release|x86.ActiveCfg = Release|Win32
+		{19CBFD39-E005-4271-8216-C9CDF9179773}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
