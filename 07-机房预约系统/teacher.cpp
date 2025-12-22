@@ -3,10 +3,18 @@
 //默认构造
 Teacher::Teacher() {}
 //有参构造 (职工编号，姓名，密码)
-Teacher::Teacher(int empId, string name, string pwd) {}
+Teacher::Teacher(int empId, string name, string pwd) {
+	this->m_EmpId = empId;
+	this->m_Name = name;
+	this->m_Pwd = pwd;
+}
 //菜单界面
 void Teacher::operMenu() {}
 //查看所有预约
 void Teacher::showAllOrder() {}
 //审核预约
 void Teacher::validOrder() {}
+
+void Teacher::printTeacher() {
+	cout << "职工号： " << m_EmpId << " 姓名： " << m_Name << " 密码：" << m_Pwd << endl;
+}

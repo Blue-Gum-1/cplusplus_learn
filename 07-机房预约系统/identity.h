@@ -11,6 +11,8 @@
 #define cout(n) cout << n << endl
 using namespace std;
 
+#include "globalFile.h"
+
 // 身份抽象类
 class Identity {
 public:

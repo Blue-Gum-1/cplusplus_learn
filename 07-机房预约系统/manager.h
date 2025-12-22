@@ -3,6 +3,8 @@
 using namespace std;
 
 #include "identity.h"
+#include "student.h"
+#include "teacher.h"
 
 class Manager :public Identity {
 public:
@@ -20,4 +22,11 @@ public:
     void showComputer();
     //清空预约记录
     void cleanFile();
+    //初始化容器
+    void initVector();
+    //检测重复 参数:(传入id，传入类型) 返回值：(true 代表有重复，false代表没有重复)
+    bool checkRepeat(int id, int type);
+
+    vector<Student> vStu;
+    vector<Teacher> vTea;
 };

@@ -16,6 +16,7 @@ public:
     void showAllOrder();
     //…Û∫À‘§‘º
     void validOrder();
+    void printTeacher();
 
     int m_EmpId; //ΩÃ ¶±‡∫≈
 };

@@ -19,6 +19,7 @@ public:
     void showAllOrder();
     //取消预约
     void cancelOrder();
+    void printStudent();
 
     //学生学号
     int m_Id;

@@ -14,3 +14,7 @@ void Student::showMyOrder() {}
 void Student::showAllOrder() {}
 //取消预约
 void Student::cancelOrder() {}
+
+void Student::printStudent() {
+	cout << "学号： " << m_Id << " 姓名： " << m_Name << " 密码：" << m_Pwd << endl;
+}
