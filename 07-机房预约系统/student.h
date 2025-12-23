@@ -3,6 +3,7 @@
 using namespace std;
 
 #include "identity.h"
+#include "computerroom.h"
 
 class Student : public Identity {
 public:
@@ -23,4 +24,6 @@ public:
 
     //学生学号
     int m_Id;
+    //机房容器
+    vector<ComputerRoom> vCom;
 };

@@ -5,6 +5,7 @@ using namespace std;
 #include "identity.h"
 #include "student.h"
 #include "teacher.h"
+#include "computerroom.h"
 
 class Manager :public Identity {
 public:
@@ -29,4 +30,5 @@ public:
 
     vector<Student> vStu;
     vector<Teacher> vTea;
+    vector<ComputerRoom> vCom;
 };

@@ -11,6 +11,7 @@
 #define cout(n) cout << n << endl
 using namespace std;
 
+#include "orderfile.h"
 #include "globalFile.h"
 
 // 身份抽象类

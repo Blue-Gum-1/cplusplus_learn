@@ -7,6 +7,13 @@ Manager::Manager(string name, string pwd) {
 	this->m_Name = name;
 	this->m_Pwd = pwd;
     this->initVector();
+
+    ifstream ifs;
+    ifs.open(COMPUTER_FILE, ios::in);
+    ComputerRoom c;
+    while (ifs >> c.m_ComId && ifs >> c.m_MaxNum) vCom.push_back(c);
+    cout << "当前机房数量为： " << vCom.size() << endl;
+    ifs.close();
 }
 //选择菜单
 void Manager::operMenu() {
@@ -93,9 +100,23 @@ void Manager::showPerson() {
     system("cls");
 }
 //查看机房信息
-void Manager::showComputer() {}
+void Manager::showComputer() {
+    cout << "机房信息如下： " << endl;
+    for (vector<ComputerRoom>::iterator it = vCom.begin(); it != vCom.end(); it++)
+        cout << "机房编号： " << it->m_ComId << " 机房最大容量： " << it->m_MaxNum << endl;
+
+    system("pause");
+    system("cls");
+}
 //清空预约记录
-void Manager::cleanFile() {}
+void Manager::cleanFile() {
+    ofstream ofs(ORDER_FILE, ios::trunc);
+    ofs.close();
+
+    cout << "清空成功！" << endl;
+    system("pause");
+    system("cls");
+}
 //初始化容器
 void Manager::initVector() {
     //读取学生文件中信息
